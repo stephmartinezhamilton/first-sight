@@ -22,8 +22,19 @@
   padding: 0 1rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   height: 70px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 2.5rem;
+}
+
+.nav-logo svg {
+  display: block;
+  height: 38px;
+  width: 48px;
 }
 
 .nav-logo h2 {
@@ -36,6 +47,18 @@
 
 .nav-logo a {
   text-decoration: none;
+}
+
+.nav-logo-img {
+  height: 600px;
+  width: 600px;
+  display: block;
+  color: white;
+  transition: color 0.3s;
+}
+
+.dark-mode .nav-logo-img {
+  color: black;
 }
 
 .nav-links {

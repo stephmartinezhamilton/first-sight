@@ -1,5 +1,6 @@
 import React from 'react';
 import './CaseStudies.css';
+import { Link } from 'react-router-dom';
 
 const CaseStudies: React.FC = () => {
   const caseStudies = [
@@ -47,6 +48,69 @@ const CaseStudies: React.FC = () => {
     <div className="case-studies-page">
       {/* Hero Section */}
       <section className="hero-section">
+        <div className="hero-orbit-bg" aria-hidden="true">
+          <svg width="0" height="0" style={{ position: 'absolute' }}>
+            <defs>
+              <filter id="ripple" x="0%" y="0%" width="100%" height="100%" filterUnits="objectBoundingBox">
+                <feTurbulence 
+                  type="fractalNoise" 
+                  baseFrequency="0.007 0.007" 
+                  numOctaves="1" 
+                  seed="2" 
+                  result="turbulence"
+                >
+                  <animate 
+                    attributeName="baseFrequency" 
+                    values="0.007 0.007; 0.009 0.009; 0.0075 0.0075; 0.007 0.007" 
+                    dur="12s" 
+                    repeatCount="indefinite"
+                  />
+                </feTurbulence>
+
+                <feDisplacementMap 
+                  in="SourceGraphic" 
+                  in2="turbulence" 
+                  scale="18" 
+                  xChannelSelector="R" 
+                  yChannelSelector="G"
+                >
+                  <animate 
+                    attributeName="scale" 
+                    values="12; 18; 24; 18; 12" 
+                    dur="10s" 
+                    repeatCount="indefinite"
+                  />
+                </feDisplacementMap>
+              </filter>
+            </defs>
+          </svg>
+          <div className="orbit-center"></div>
+        </div>
+        <div className="hero-logo-absolute">
+          <Link to="/">
+            <svg
+              className="hero-logo-svg"
+              width="100"
+              height="100"
+              viewBox="0 0 250 371"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="20"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="125" cy="185" r="90" fill="none" />
+              <path d="M 30 185 Q 60 60 125 60 Q 190 60 220 185" fill="none" />
+              <path d="M 60 320 Q 125 370 190 320" fill="none" />
+              <path d="M 60 320 Q 30 250 30 185" fill="none" />
+              <path d="M 190 320 Q 220 250 220 185" fill="none" />
+              <path d="M 125 60 L 125 20" fill="none" />
+              <path d="M 60 320 L 30 350" fill="none" />
+              <path d="M 190 320 L 220 350" fill="none" />
+            </svg>
+          </Link>
+        </div>
         <div className="hero-container">
           <div className="hero-content">
             <h1 className="hero-title">
