@@ -86,7 +86,7 @@ const CaseStudies: React.FC = () => {
         <div className="hero-container">
           <div className="hero-content">
             <h1 className="hero-title" style={{ fontWeight: 200 }}>
-              Stephen is a consultant at <span className="highlight">Mercer</span> exploring the leap into <span className="highlight">Product</span>—where curiosity meets execution.
+              Stephen is an aspiring product manager, blending curiousity with execution to build what matters.
             </h1>
           </div>
         </div>
