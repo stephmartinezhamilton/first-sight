@@ -1,6 +1,6 @@
 import React from 'react';
 import './CaseStudies.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const CaseStudies: React.FC = () => {
   const caseStudies = [
@@ -44,6 +44,11 @@ const CaseStudies: React.FC = () => {
     alert(`Case Study ${id} - PDF/External link will be added here!`);
   };
 
+  const navigate = useNavigate();
+  const handlePixelClick = () => {
+    navigate('/case-studies');
+  };
+
   return (
     <div className="case-studies-page">
       {/* Hero Section */}
@@ -56,7 +61,9 @@ const CaseStudies: React.FC = () => {
         <img
           src={require('../assets/pixel_me.png')}
           alt="Pixelated character"
-          className="pixel-character-bg"
+          className="pixel-character-bg clickable"
+          onClick={handlePixelClick}
+          style={{ cursor: 'pointer', pointerEvents: 'auto' }}
         />
         <div className="hero-container">
           <div className="hero-content">

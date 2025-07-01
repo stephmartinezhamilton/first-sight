@@ -417,4 +417,9 @@
   image-rendering: pixelated;
   z-index: 1;
   pointer-events: none;
+}
+
+.clickable {
+  cursor: pointer;
+  pointer-events: auto;
 } 
