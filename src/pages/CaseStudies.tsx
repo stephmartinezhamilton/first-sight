@@ -77,12 +77,8 @@ const CaseStudies: React.FC = () => {
       <section className="case-studies-section">
         <div className="case-studies-container">
           <div className="section-header">
-            <h2 className="section-title">Featured Case Studies</h2>
-            <p className="section-subtitle">
-              Real projects, real impact. Here's how I've helped organizations solve complex challenges.
-            </p>
+            {/* Removed section title and subtitle */}
           </div>
-          
           <div className="case-studies-grid">
             {caseStudies.map((study) => (
               <div 

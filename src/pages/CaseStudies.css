@@ -80,17 +80,17 @@
 
 .case-studies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   margin-top: 3rem;
 }
 
 .case-study-card {
   background-color: var(--background);
-  border-radius: 1rem;
+  border-radius: 0;
   overflow: hidden;
   box-shadow: var(--shadow);
-  border: 1px solid var(--border-color);
+  border: none;
   transition: all 0.3s ease;
   cursor: pointer;
   animation: fadeInUp 0.6s ease-out;
@@ -427,4 +427,8 @@
 .clickable {
   cursor: pointer;
   pointer-events: auto;
+}
+
+.case-studies-section, .case-studies-container, .section-header, .section-title, .section-subtitle, .case-study-title, .case-study-subtitle, .case-study-description, .case-study-category, .case-study-link {
+  font-family: 'Prata', serif;
 } 
