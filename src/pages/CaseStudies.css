@@ -153,8 +153,6 @@
   filter: url(#ripple);
 }
 
-
-
 /* Ripple effect removed */
 
 /* Case Studies Section */
@@ -442,4 +440,51 @@
   .form-group textarea {
     padding: 0.5rem;
   }
-} 
+}
+
+.floating-orbs-bg {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.orb {
+  position: absolute;
+  bottom: -60px;
+  width: 32px;
+  height: 32px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 50%;
+  filter: blur(1px);
+  opacity: 0.7;
+  animation: float-orb 8s linear infinite;
+}
+
+@keyframes float-orb {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-110vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+.orb-1  { left: 10%;  width: 18px; height: 18px; animation-delay: 0s;  animation-duration: 7s; }
+.orb-2  { left: 20%;  width: 24px; height: 24px; animation-delay: 2s;  animation-duration: 8s; }
+.orb-3  { left: 30%;  width: 14px; height: 14px; animation-delay: 1s;  animation-duration: 6s; }
+.orb-4  { left: 40%;  width: 22px; height: 22px; animation-delay: 3s;  animation-duration: 9s; }
+.orb-5  { left: 50%;  width: 28px; height: 28px; animation-delay: 1.5s;animation-duration: 7.5s; }
+.orb-6  { left: 60%;  width: 20px; height: 20px; animation-delay: 2.5s;animation-duration: 8.5s; }
+.orb-7  { left: 70%;  width: 16px; height: 16px; animation-delay: 0.5s;animation-duration: 7.2s; }
+.orb-8  { left: 80%;  width: 26px; height: 26px; animation-delay: 2.2s;animation-duration: 8.2s; }
+.orb-9  { left: 90%;  width: 12px; height: 12px; animation-delay: 1.8s;animation-duration: 6.8s; }
+.orb-10 { left: 15%;  width: 20px; height: 20px; animation-delay: 3.5s;animation-duration: 9.5s; }
+.orb-11 { left: 65%;  width: 18px; height: 18px; animation-delay: 4s;  animation-duration: 8.8s; }
+.orb-12 { left: 85%;  width: 22px; height: 22px; animation-delay: 2.8s;animation-duration: 7.8s; } 

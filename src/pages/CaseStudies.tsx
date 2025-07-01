@@ -48,6 +48,11 @@ const CaseStudies: React.FC = () => {
     <div className="case-studies-page">
       {/* Hero Section */}
       <section className="hero-section">
+        <div className="floating-orbs-bg" aria-hidden="true">
+          {[...Array(12)].map((_, i) => (
+            <div key={i} className={`orb orb-${i+1}`}></div>
+          ))}
+        </div>
         <div className="hero-logo-absolute">
           <Link to="/">
             <svg
