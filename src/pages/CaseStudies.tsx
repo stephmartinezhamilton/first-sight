@@ -81,8 +81,16 @@ const CaseStudies: React.FC = () => {
         <div className="hero-container">
           <div className="hero-content">
             <h1 className="hero-title" style={{ fontWeight: 200 }}>
-              Stephen is an aspiring product manager, blending curiousity with execution to build what matters.
+              Stephen is a consultant at <span className="highlight">Mercer</span> exploring the leap into <span className="highlight">Product</span>—where curiosity meets execution.
             </h1>
+            <img
+              src={require('../assets/pixel_me.png')}
+              alt="Pixelated character"
+              className="pixel-character"
+              width={64}
+              height={64}
+              style={{ imageRendering: 'pixelated', marginTop: '2rem' }}
+            />
           </div>
         </div>
       </section>

@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #a678b4 !important;
+  background: #c6b7f2 !important;
   padding-top: 0px; /* Account for fixed navigation */
   position: relative;
   overflow: hidden;
@@ -487,4 +487,10 @@
 .orb-9  { left: 90%;  width: 12px; height: 12px; animation-delay: 1.8s;animation-duration: 6.8s; }
 .orb-10 { left: 15%;  width: 20px; height: 20px; animation-delay: 3.5s;animation-duration: 9.5s; }
 .orb-11 { left: 65%;  width: 18px; height: 18px; animation-delay: 4s;  animation-duration: 8.8s; }
-.orb-12 { left: 85%;  width: 22px; height: 22px; animation-delay: 2.8s;animation-duration: 7.8s; } 
+.orb-12 { left: 85%;  width: 22px; height: 22px; animation-delay: 2.8s;animation-duration: 7.8s; }
+
+.pixel-character {
+  image-rendering: pixelated;
+  display: block;
+  margin: 2rem auto 0 auto;
+} 
