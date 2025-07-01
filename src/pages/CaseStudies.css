@@ -415,7 +415,13 @@
   height: 300px;
   opacity: 1;
   image-rendering: pixelated;
-  z-index: 1;
+  z-index: 10;
+}
+
+.pixel-character-bg:hover {
+  opacity: 0.85;
+  transform: translate(-50%, -50%) scale(0.97);
+  transition: opacity 0.2s, transform 0.2s;
 }
 
 .clickable {
