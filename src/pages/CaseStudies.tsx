@@ -18,7 +18,7 @@ const CaseStudies: React.FC = () => {
       subtitle: "Enterprise UX Research",
       description: "Led user feedback sessions to uncover pain points and improve the usability of Intellify, Mercer's internal AI-powered platform for client benefit plan insights.",
       category: "User Research",
-      image: "📊"
+      image: "/ux.png"
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const CaseStudies: React.FC = () => {
       subtitle: "Product Management",
       description: "Contributed to The Prelude's 0-to-1 product launch by defining key app requirements, building analytics infrastructure, and facilitating user testing to shape a luxury mobile experience.",
       category: "Mobile App Strategy",
-      image: "🎨"
+      image: "/prelude.png"
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ const CaseStudies: React.FC = () => {
       subtitle: "VBA Scripting & Access Database Optimazation",
       description: "Developed VBA scripts to automate data extraction from Access databases, improving PPT generation efficiency by 30% for Mercer's MHA team.",
       category: "Data Ops & Efficiency",
-      image: "🚀"
+      image: "/excel.png"
     }
   ];
 

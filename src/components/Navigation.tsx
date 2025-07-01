@@ -18,14 +18,14 @@ const Navigation: React.FC = () => {
           className={location.pathname === '/case-studies' ? 'active' : ''}
           onClick={closeMobileMenu}
         >
-          Case Studies
+          Work
         </Link>
         <Link
           to="/about"
           className={location.pathname === '/about' ? 'active' : ''}
           onClick={closeMobileMenu}
         >
-          About Me
+          About
         </Link>
       </div>
       <button
