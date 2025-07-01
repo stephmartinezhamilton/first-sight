@@ -44,9 +44,8 @@ const CaseStudies: React.FC = () => {
     alert(`Case Study ${id} - PDF/External link will be added here!`);
   };
 
-  const navigate = useNavigate();
   const handlePixelClick = () => {
-    navigate('/case-studies');
+    window.location.href = '/case-studies';
   };
 
   return (
