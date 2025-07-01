@@ -58,31 +58,6 @@ const CaseStudies: React.FC = () => {
           alt="Pixelated character"
           className="pixel-character-bg"
         />
-        <div className="hero-logo-absolute">
-          <Link to="/">
-            <svg
-              className="hero-logo-svg"
-              width="100"
-              height="100"
-              viewBox="0 0 250 371"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="20"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle cx="125" cy="185" r="90" fill="none" />
-              <path d="M 30 185 Q 60 60 125 60 Q 190 60 220 185" fill="none" />
-              <path d="M 60 320 Q 125 370 190 320" fill="none" />
-              <path d="M 60 320 Q 30 250 30 185" fill="none" />
-              <path d="M 190 320 Q 220 250 220 185" fill="none" />
-              <path d="M 125 60 L 125 20" fill="none" />
-              <path d="M 60 320 L 30 350" fill="none" />
-              <path d="M 190 320 L 220 350" fill="none" />
-            </svg>
-          </Link>
-        </div>
         <div className="hero-container">
           <div className="hero-content">
             <h1 className="hero-title" style={{ fontWeight: 200 }}>
