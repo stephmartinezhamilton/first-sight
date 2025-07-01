@@ -53,6 +53,11 @@ const CaseStudies: React.FC = () => {
             <div key={i} className={`orb orb-${i+1}`}></div>
           ))}
         </div>
+        <img
+          src={require('../assets/pixel_me.png')}
+          alt="Pixelated character"
+          className="pixel-character-bg"
+        />
         <div className="hero-logo-absolute">
           <Link to="/">
             <svg
@@ -83,14 +88,6 @@ const CaseStudies: React.FC = () => {
             <h1 className="hero-title" style={{ fontWeight: 200 }}>
               Stephen is a consultant at <span className="highlight">Mercer</span> exploring the leap into <span className="highlight">Product</span>—where curiosity meets execution.
             </h1>
-            <img
-              src={require('../assets/pixel_me.png')}
-              alt="Pixelated character"
-              className="pixel-character"
-              width={64}
-              height={64}
-              style={{ imageRendering: 'pixelated', marginTop: '2rem' }}
-            />
           </div>
         </div>
       </section>
