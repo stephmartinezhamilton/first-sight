@@ -18,7 +18,7 @@
 
 .custom-nav-links a {
   color: var(--text-primary, #222);
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
   text-decoration: none;
   background: none;
@@ -27,6 +27,7 @@
   padding: 0.5rem 0;
   position: relative;
   transition: color 0.3s;
+  font-family: 'Prata', serif;
 }
 
 .custom-nav-links a:hover,
