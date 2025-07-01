@@ -6,34 +6,34 @@ const CaseStudies: React.FC = () => {
   const caseStudies = [
     {
       id: 1,
-      title: "Digital Transformation at Mercer",
-      subtitle: "Consulting Case Study",
-      description: "Led strategic initiatives to modernize client engagement processes, resulting in 40% efficiency gains and improved client satisfaction scores.",
-      category: "Strategy",
-      image: "🏢"
+      title: "Evaluating Pendo as a Digital Adoption Platform within MarshWings Platform",
+      subtitle: "Digital Adoption Strategy",
+      description: "Led integration of Pendo into MarshWings application to support user analytics and operational efficiency for 10,000+ users across U.S. and Canada.",
+      category: "Data Analytics Strategy",
+      image: "/airplane.png"
     },
     {
       id: 2,
-      title: "Product Strategy Framework",
-      subtitle: "Innovation Project",
-      description: "Developed a comprehensive product strategy framework that streamlined decision-making processes across multiple stakeholder groups.",
-      category: "Product Strategy",
+      title: "Improving UX for Intellify: An AI-Powered Benefits Intelligence Tool",
+      subtitle: "Enterprise UX Research",
+      description: "Led user feedback sessions to uncover pain points and improve the usability of Intellify, Mercer's internal AI-powered platform for client benefit plan insights.",
+      category: "User Research",
       image: "📊"
     },
     {
       id: 3,
-      title: "User Experience Optimization",
-      subtitle: "UX Research",
-      description: "Conducted user research and implemented design improvements that increased user engagement by 60% and reduced support tickets by 35%.",
-      category: "UX/UI",
+      title: "The Prelude: 0 to 1 Product Development",
+      subtitle: "Product Management",
+      description: "Contributed to The Prelude's 0-to-1 product launch by defining key app requirements, building analytics infrastructure, and facilitating user testing to shape a luxury mobile experience.",
+      category: "Mobile App Strategy",
       image: "🎨"
     },
     {
       id: 4,
-      title: "Market Entry Strategy",
-      subtitle: "Business Development",
-      description: "Analyzed market opportunities and developed go-to-market strategies for new service offerings in emerging markets.",
-      category: "Business Strategy",
+      title: "Automation & Data Efficiency for Mercer's MHA Team",
+      subtitle: "VBA Scripting & Access Database Optimazation",
+      description: "Developed VBA scripts to automate data extraction from Access databases, improving PPT generation efficiency by 30% for Mercer's MHA team.",
+      category: "Data Ops & Efficiency",
       image: "🚀"
     }
   ];
@@ -87,16 +87,20 @@ const CaseStudies: React.FC = () => {
                 onClick={() => handleCaseStudyClick(study.id)}
               >
                 <div className="case-study-image">
-                  <span>{study.image}</span>
+                  {study.image.startsWith('/') ? (
+                    <img src={study.image} alt={study.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  ) : (
+                    <span>{study.image}</span>
+                  )}
                 </div>
                 <div className="case-study-content">
-                  <div className="case-study-category">{study.category}</div>
+                  {/* <div className="case-study-category">{study.category}</div> */}
                   <h3 className="case-study-title">{study.title}</h3>
                   <p className="case-study-subtitle">{study.subtitle}</p>
                   <p className="case-study-description">{study.description}</p>
-                  <div className="case-study-link">
+                  {/* <div className="case-study-link">
                     <span>View Case Study →</span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}
