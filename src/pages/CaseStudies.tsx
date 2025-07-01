@@ -75,7 +75,7 @@ const CaseStudies: React.FC = () => {
         </div>
         <div className="hero-container">
           <div className="hero-content">
-            <h1 className="hero-title">
+            <h1 className="hero-title" style={{ fontWeight: 200 }}>
               Stephen is a consultant at <span className="highlight">Mercer</span> exploring the leap into <span className="highlight">Product</span>—where curiosity meets execution.
             </h1>
           </div>
