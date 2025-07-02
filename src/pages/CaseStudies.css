@@ -59,13 +59,6 @@
   color: var(--text-primary);
 }
 
-.hero-subtitle {
-  font-size: 1.25rem;
-  line-height: 1.7;
-  color: var(--text-primary);
-  margin-bottom: 3rem;
-}
-
 /* Case Studies Section */
 .case-studies-section {
   padding: 5rem 0;
@@ -114,19 +107,6 @@
   padding: 2rem;
 }
 
-.case-study-category {
-  display: inline-block;
-  background: var(--primary-color);
-  color: var(--background);
-  padding: 0.25rem 0.75rem;
-  border-radius: 1rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 1rem;
-}
-
 .case-study-title {
   font-size: 1.5rem;
   font-weight: 600;
@@ -145,18 +125,6 @@
   line-height: 1.6;
   color: var(--text-primary);
   margin-bottom: 1.5rem;
-}
-
-.case-study-link {
-  color: var(--text-primary);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.875rem;
-  transition: color 0.3s ease;
-}
-
-.case-study-card:hover .case-study-link {
-  color: var(--text-secondary);
 }
 
 /* Contact Section */
@@ -213,61 +181,7 @@
   margin-left: 230px;
 }
 
-.contact-info {
-  animation: fadeInUp 0.6s ease-out;
-}
-
-.contact-info h3 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin-bottom: 1rem;
-}
-
-.contact-info p {
-  font-size: 1.125rem;
-  line-height: 1.7;
-  color: var(--text-primary);
-  margin-bottom: 2rem;
-}
-
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  transition: background-color 0.3s ease;
-}
-
-.contact-item:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.dark-mode .contact-item:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.contact-icon {
-  font-size: 1.5rem;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--primary-color);
-  color: var(--background);
-  border-radius: 50%;
-}
-
 .contact-form {
-  animation: fadeInUp 0.6s ease-out 0.2s both;
   background-color: var(--background);
   padding: 2rem;
   border-radius: 1rem;
@@ -481,7 +395,7 @@
   pointer-events: auto;
 }
 
-.case-studies-section, .case-studies-container, .section-header, .section-title, .section-subtitle, .case-study-title, .case-study-subtitle, .case-study-description, .case-study-category, .case-study-link {
+.case-studies-section, .case-studies-container, .section-header, .section-title, .section-subtitle, .case-study-title, .case-study-subtitle, .case-study-description {
   font-family: 'Prata', serif;
 }
 
