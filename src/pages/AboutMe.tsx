@@ -87,8 +87,7 @@ const AboutMe: React.FC = () => {
               (proh-duhkt man-ij-er)
               </p>
               <p className="hero-bio">
-                Born and raised in New York, I am an aspiring product manager with a background in the History of Science, Medicine, and Public Health from Yale,
-                I focused on health, economics, and technology. I am passionate about bridging the gap between technology, user behavior, and bussiness goals to create
+                Born and raised in New York, I am an aspiring product manager with a background studying health, economics, and technology at Yale University. I am passionate about bridging the gap between technology, user behavior, and bussiness goals to create
                 thoughtful, impactful products. Outside of work, you'll me taking hip-hop classes, exploring new coffee shops, or catching up on Morning Brew.
               </p>
             </div>
