@@ -80,12 +80,12 @@ const AboutMe: React.FC = () => {
           <div className="hero-content">
             <div className="hero-image">
               <div className="profile-placeholder">
-                <span>👨‍💼</span>
+                <img src="/grad.png" alt="Stephen Martinez-Hamilton" />
               </div>
             </div>
             <div className="hero-text">
               <h1 className="hero-title">
-                About <span className="highlight">Stephen</span>
+                Hello, I am Stephen.
               </h1>
               <p className="hero-bio">
                 I'm a strategic consultant at Mercer with a passion for turning complex business challenges into elegant product solutions. 
