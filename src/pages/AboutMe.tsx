@@ -7,17 +7,31 @@ const AboutMe: React.FC = () => {
       id: 1,
       company: "Mercer",
       role: "Consultant",
-      period: "2022 - Present",
-      description: "Leading strategic initiatives and digital transformation projects for Fortune 500 clients. Specializing in process optimization and stakeholder management.",
-      achievements: ["40% efficiency gains", "Improved client satisfaction", "Cross-functional leadership"]
+      period: "2022 - Present"
     },
     {
       id: 2,
       company: "Previous Role",
       role: "Business Analyst",
-      period: "2020 - 2022",
-      description: "Analyzed business processes and developed data-driven recommendations for operational improvements.",
-      achievements: ["Process optimization", "Data analysis", "Stakeholder collaboration"]
+      period: "2020 - 2022"
+    },
+    {
+      id: 3,
+      company: "Company 3",
+      role: "Role 3",
+      period: "2018 - 2020"
+    },
+    {
+      id: 4,
+      company: "Company 4",
+      role: "Role 4",
+      period: "2016 - 2018"
+    },
+    {
+      id: 5,
+      company: "Company 5",
+      role: "Role 5",
+      period: "2014 - 2016"
     }
   ];
 
@@ -97,29 +111,18 @@ const AboutMe: React.FC = () => {
 
       {/* Work Experience Section */}
       <section className="experience-section">
-        <div className="experience-container">
-          <div className="section-header">
-            <h2 className="section-title">Experience
-            </h2>
+        <div className="experience-redesign">
+          <div className="experience-title">
+            <h2>Experience</h2>
           </div>
-          
-          <div className="timeline">
-            {workExperience.map((job, index) => (
-              <div key={job.id} className="timeline-item">
-                <div className="timeline-marker"></div>
-                <div className="timeline-content">
-                  <div className="job-header">
-                    <h3 className="job-title">{job.role}</h3>
-                    <span className="job-company">{job.company}</span>
-                    <span className="job-period">{job.period}</span>
-                  </div>
-                  <p className="job-description">{job.description}</p>
-                  <div className="job-achievements">
-                    {job.achievements.map((achievement, idx) => (
-                      <span key={idx} className="achievement-tag">{achievement}</span>
-                    ))}
-                  </div>
+          <div className="experience-list">
+            {[...workExperience].sort((a, b) => b.id - a.id).map((job) => (
+              <div key={job.id} className="experience-item">
+                <div className="experience-company-period">
+                  <span className="experience-company">{job.company}</span>
+                  <span className="experience-period">{job.period}</span>
                 </div>
+                <div className="experience-role">{job.role}</div>
               </div>
             ))}
           </div>

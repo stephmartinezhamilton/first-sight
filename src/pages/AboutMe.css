@@ -615,4 +615,133 @@
   font-size: 0.875rem;
   background: var(--bg-primary);
   margin-top: auto;
+}
+
+.experience-redesign {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  position: relative;
+}
+
+.experience-title {
+  flex: 0 0 200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 2.5rem;
+  font-family: 'Prata', serif;
+  font-weight: 400;
+  color: #000;
+  background: #fff;
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 3;
+}
+
+.experience-list {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.experience-redesign::before {
+  content: '';
+  position: absolute;
+  left: 220px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #e0e0e0;
+  z-index: 1;
+}
+
+.experience-item {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  padding: 1.5rem 2rem;
+  color: #222;
+  font-family: 'Prata', serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.experience-company-period {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+}
+
+.experience-role {
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: right;
+  min-width: 120px;
+}
+
+.experience-company {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.experience-period {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+
+.experience-description {
+  font-size: 1rem;
+  color: #333;
+}
+
+.experience-title h2 {
+  color: #000 !important;
+  font-weight: 400 !important;
+}
+
+@media (max-width: 900px) {
+  .experience-redesign {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2.5rem 0.5rem;
+  }
+  .experience-title {
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .experience-redesign::before {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .experience-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .experience-role {
+    text-align: left;
+    min-width: 0;
+    width: 100%;
+  }
 } 
