@@ -310,17 +310,12 @@
 
 /* Footer Credit */
 .footer-credit {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  z-index: 1000;
-}
-
-.footer-credit p {
+  text-align: left;
+  padding: 2rem;
   color: var(--text-secondary);
-  font-size: 0.75rem;
-  margin: 0;
-  font-family: 'Prata', serif;
+  font-size: 0.875rem;
+  background: var(--bg-primary);
+  margin-top: auto;
 }
 
 .floating-orbs-bg {

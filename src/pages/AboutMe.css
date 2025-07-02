@@ -4,13 +4,13 @@
 }
 
 /* Hero Section */
-.hero-section {
+.about-me-page .hero-section {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #000000 !important;
-  padding-top: 0px;
+  padding-top: 16rem;
   position: relative;
   overflow: hidden;
   z-index: 2;
@@ -465,8 +465,6 @@
   transform: translateY(-2px);
 }
 
-
-
 /* Responsive Design */
 @media (max-width: 1024px) {
   .hero-content {
@@ -584,15 +582,10 @@
 
 /* Footer Credit */
 .footer-credit {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  z-index: 1000;
-}
-
-.footer-credit p {
+  text-align: left;
+  padding: 2rem;
   color: var(--text-secondary);
-  font-size: 0.75rem;
-  margin: 0;
-  font-family: 'Prata', serif;
+  font-size: 0.875rem;
+  background: var(--bg-primary);
+  margin-top: auto;
 } 
