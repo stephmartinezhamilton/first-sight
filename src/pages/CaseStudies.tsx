@@ -112,35 +112,13 @@ const CaseStudies: React.FC = () => {
       <section className="contact-section">
         <div className="contact-container">
           <div className="section-header">
-            <h2 className="section-title">Let's Connect</h2>
+            <h2 className="section-title">Let's Chat</h2>
             <p className="section-subtitle">
-              Interested in working together? I'd love to hear about your next project.
+              Open to conversations - from big ideas to casual thoughts.
             </p>
           </div>
           
           <div className="contact-content">
-            <div className="contact-info">
-              <h3>Ready to collaborate?</h3>
-              <p>
-                Whether you're looking for strategic consulting, product strategy, 
-                or just want to discuss interesting opportunities, I'm always open to new connections.
-              </p>
-              <div className="contact-details">
-                <div className="contact-item">
-                  <span className="contact-icon">📧</span>
-                  <span>martinezhamiltonstephen@gmail.com</span>
-                </div>
-                <div className="contact-item">
-                  <span className="contact-icon">📱</span>
-                  <span>+1 (917) 562-0424</span>
-                </div>
-                <div className="contact-item">
-                  <span className="contact-icon">📍</span>
-                  <span>New York, NY</span>
-                </div>
-              </div>
-            </div>
-            
             <form className="contact-form">
               <div className="form-group">
                 <label htmlFor="name">Name</label>
@@ -179,6 +157,11 @@ const CaseStudies: React.FC = () => {
           </div>
         </div>
       </section>
+      
+      {/* Footer Credit */}
+      <div className="footer-credit">
+        <p>© Designed by: Stephen Martinez-Hamilton</p>
+      </div>
     </div>
   );
 };

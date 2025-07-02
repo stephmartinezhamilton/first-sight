@@ -173,9 +173,8 @@
 }
 
 .contact-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  display: flex;
+  justify-content: center;
   align-items: start;
 }
 
@@ -238,6 +237,8 @@
   padding: 2rem;
   border-radius: 1rem;
   border: 1px solid var(--border-color);
+  width: 500px;
+  max-width: 90%;
 }
 
 .form-group {
@@ -351,6 +352,21 @@
   .form-group textarea {
     padding: 0.5rem;
   }
+}
+
+/* Footer Credit */
+.footer-credit {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.footer-credit p {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  margin: 0;
+  font-family: 'Prata', serif;
 }
 
 .floating-orbs-bg {

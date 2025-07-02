@@ -207,28 +207,6 @@ const AboutMe: React.FC = () => {
           </div>
           
           <div className="contact-content">
-            <div className="contact-info">
-              <h3>Ready to collaborate?</h3>
-              <p>
-                Whether you're looking for strategic consulting, product strategy, 
-                or just want to discuss interesting opportunities, I'm always open to new connections.
-              </p>
-              <div className="contact-details">
-                <div className="contact-item">
-                  <span className="contact-icon">📧</span>
-                  <span>martinezhamiltonstephen@gmail.com</span>
-                </div>
-                <div className="contact-item">
-                  <span className="contact-icon">📱</span>
-                  <span>+1 (917) 562-0424</span>
-                </div>
-                <div className="contact-item">
-                  <span className="contact-icon">📍</span>
-                  <span>New York, NY</span>
-                </div>
-              </div>
-            </div>
-            
             <form className="contact-form">
               <div className="form-group">
                 <label htmlFor="name">Name</label>
@@ -267,6 +245,11 @@ const AboutMe: React.FC = () => {
           </div>
         </div>
       </section>
+      
+      {/* Footer Credit */}
+      <div className="footer-credit">
+        <p>© Designed by: Stephen Martinez-Hamilton</p>
+      </div>
     </div>
   );
 };
