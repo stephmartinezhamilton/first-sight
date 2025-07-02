@@ -666,10 +666,6 @@
 }
 
 .experience-item {
-  background: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-  padding: 1.5rem 2rem;
   color: #222;
   font-family: 'Prata', serif;
   display: flex;
@@ -677,6 +673,15 @@
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.experience-item:last-child {
+  border-bottom: none;
 }
 
 .experience-company-period {

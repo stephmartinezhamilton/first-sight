@@ -4,34 +4,28 @@ import './AboutMe.css';
 const AboutMe: React.FC = () => {
   const workExperience = [
     {
-      id: 1,
-      company: "Mercer",
-      role: "Consultant",
-      period: "2022 - Present"
-    },
-    {
       id: 2,
-      company: "Previous Role",
-      role: "Business Analyst",
-      period: "2020 - 2022"
+      company: "Product Team at The Prelude",
+      role: "Associate Product Manager",
+      period: "Jan 2024 - Aug 2024"
     },
     {
       id: 3,
-      company: "Company 3",
-      role: "Role 3",
-      period: "2018 - 2020"
+      company: "Data & Analytics at Mercer",
+      role: "VBA Developer",
+      period: "Jan 2024 - Apr 2024"
     },
     {
       id: 4,
-      company: "Company 4",
-      role: "Role 4",
-      period: "2016 - 2018"
+      company: "Intellify Team at Mercer",
+      role: "UX Research Intern",
+      period: "Jan 2024 - Feb 2025"
     },
     {
       id: 5,
-      company: "Company 5",
-      role: "Role 5",
-      period: "2014 - 2016"
+      company: "Operations & Technology at Marsh",
+      role: "Product Operations Intern",
+      period: "Mar 2025 - Present"
     }
   ];
 
@@ -102,7 +96,7 @@ const AboutMe: React.FC = () => {
               </p>
               <p className="hero-bio">
                 Born and raised in New York, I am an aspiring product manager with a background studying health, economics, and technology at Yale University. I am passionate about bridging the gap between technology, user behavior, and bussiness goals to create
-                thoughtful, impactful products. Outside of work, you'll me taking hip-hop classes, exploring new coffee shops, or catching up on Morning Brew.
+                thoughtful, impactful products. Outside of work, you'll see me taking yoga classes, exploring new coffee shops, or catching up on Morning Brew.
               </p>
             </div>
           </div>
