@@ -11,6 +11,7 @@
   justify-content: center;
   background: #000000 !important;
   padding-top: 16rem;
+  padding-bottom: 2rem;
   position: relative;
   overflow: hidden;
   z-index: 2;
@@ -112,8 +113,21 @@
 
 /* Work Experience Section */
 .experience-section {
-  padding: 5rem 0;
-  background-color: var(--background-secondary);
+  padding: 4rem 0;
+  background: #ffffff;
+  margin-top: 0;
+  color: #000000;
+}
+
+.experience-section .section-title,
+.experience-section .section-subtitle,
+.experience-section .job-title,
+.experience-section .job-company,
+.experience-section .job-period,
+.experience-section .job-description,
+.experience-section .achievement-tag {
+  color: #000000 !important;
+  font-weight: 300;
 }
 
 .experience-container {

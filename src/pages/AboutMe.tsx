@@ -100,10 +100,8 @@ const AboutMe: React.FC = () => {
       <section className="experience-section">
         <div className="experience-container">
           <div className="section-header">
-            <h2 className="section-title">Work Experience</h2>
-            <p className="section-subtitle">
-              My professional journey from business analysis to strategic consulting.
-            </p>
+            <h2 className="section-title">Experience
+            </h2>
           </div>
           
           <div className="timeline">
