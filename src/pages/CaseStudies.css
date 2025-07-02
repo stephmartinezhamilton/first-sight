@@ -16,6 +16,10 @@
   z-index: 2;
 }
 
+.case-studies-page .hero-section {
+  background: #c6b7f2 !important;
+}
+
 .hero-container {
   width: auto;
   min-height: calc(100vh - 70px); /* Subtract navigation height */

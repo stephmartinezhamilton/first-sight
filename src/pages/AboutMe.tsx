@@ -48,25 +48,21 @@ const AboutMe: React.FC = () => {
   const productInterests = [
     {
       id: 1,
-      icon: "🎯",
       title: "Product Strategy",
       description: "Developing comprehensive product roadmaps and go-to-market strategies that align business objectives with user needs."
     },
     {
       id: 2,
-      icon: "👥",
       title: "User Research",
       description: "Conducting qualitative and quantitative research to understand user pain points and validate product decisions."
     },
     {
       id: 3,
-      icon: "📊",
       title: "Data-Driven Decisions",
       description: "Leveraging analytics and metrics to inform product strategy and measure success."
     },
     {
       id: 4,
-      icon: "🚀",
       title: "Innovation",
       description: "Exploring emerging technologies and methodologies to create innovative product solutions."
     }
@@ -88,27 +84,13 @@ const AboutMe: React.FC = () => {
                 Hello, I am Stephen.
               </h1>
               <p className="hero-bio">
-                I'm a strategic consultant at Mercer with a passion for turning complex business challenges into elegant product solutions. 
-                My journey from consulting to product management is driven by a deep curiosity about how technology can solve real-world problems.
+              (proh-duhkt man-ij-er)
               </p>
               <p className="hero-bio">
-                At Yale, I studied Economics and Political Science, developing a strong foundation in analytical thinking and policy analysis. 
-                This background, combined with my consulting experience, gives me a unique perspective on product strategy and user needs.
+                Born and raised in New York, I am an aspiring product manager with a background in the History of Science, Medicine, and Public Health from Yale,
+                I focused on health, economics, and technology. I am passionate about bridging the gap between technology, user behavior, and bussiness goals to create
+                thoughtful, impactful products. Outside of work, you'll me taking hip-hop classes, exploring new coffee shops, or catching up on Morning Brew.
               </p>
-              <div className="hero-quick-facts">
-                <div className="fact">
-                  <span className="fact-icon">🎓</span>
-                  <span>Yale University</span>
-                </div>
-                <div className="fact">
-                  <span className="fact-icon">🏢</span>
-                  <span>Mercer Consultant</span>
-                </div>
-                <div className="fact">
-                  <span className="fact-icon">📍</span>
-                  <span>New York, NY</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -185,9 +167,6 @@ const AboutMe: React.FC = () => {
           <div className="interests-grid">
             {productInterests.map((interest) => (
               <div key={interest.id} className="interest-card">
-                <div className="interest-icon">
-                  <span>{interest.icon}</span>
-                </div>
                 <h3 className="interest-title">{interest.title}</h3>
                 <p className="interest-description">{interest.description}</p>
               </div>
