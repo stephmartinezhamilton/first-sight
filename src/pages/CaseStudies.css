@@ -93,7 +93,6 @@
   border: none;
   transition: all 0.3s ease;
   cursor: pointer;
-  animation: fadeInUp 0.6s ease-out;
 }
 
 .case-study-card:hover {
@@ -195,7 +194,6 @@
   margin-bottom: 1rem;
   display: flex;
   justify-content: center;
-  margin-left: 230px;
 }
 
 .linkedin-link {
@@ -212,6 +210,7 @@
   height: 40px;
   color: white;
   filter: brightness(0) invert(1);
+  margin-left: 230px;
 }
 
 .contact-info {
@@ -484,4 +483,6 @@
 
 .case-studies-section, .case-studies-container, .section-header, .section-title, .section-subtitle, .case-study-title, .case-study-subtitle, .case-study-description, .case-study-category, .case-study-link {
   font-family: 'Prata', serif;
-} 
+}
+
+ 
