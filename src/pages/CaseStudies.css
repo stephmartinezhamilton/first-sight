@@ -203,6 +203,7 @@
   color: var(--text-primary);
   margin-bottom: 0.5rem;
   text-align: left;
+  font-family: 'Prata', serif;
 }
 
 .form-group input,
@@ -238,6 +239,7 @@
   border-radius: 0.5rem;
   font-size: 1rem;
   font-weight: 600;
+  font-family: 'Prata', serif;
   cursor: pointer;
   transition: all 0.3s ease;
 }
