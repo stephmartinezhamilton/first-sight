@@ -60,7 +60,7 @@ const CaseStudies: React.FC = () => {
         <img
           src={require('../assets/pixel_me.png')}
           alt="Pixelated character"
-          className="pixel-character-bg clickable"
+          className="pixel-character-bg clickable fade-in"
           onClick={handlePixelClick}
           style={{ cursor: 'pointer', pointerEvents: 'auto' }}
         />
