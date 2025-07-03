@@ -67,13 +67,14 @@
   width: 100%;
 }
 
-.hero-title {
+.about-me-page .hero-title {
   font-size: 4rem;
   font-weight: 300;
   line-height: 1.1;
   margin-bottom: 2.5rem;
   color: var(--text-primary);
-  text-align: left;
+  text-align: left !important;
+  white-space: nowrap;
 }
 
 .hero-title .highlight {
@@ -394,6 +395,7 @@
   background-color: var(--background);
   color: var(--text-primary);
   font-size: 1rem;
+  font-family: 'Prata', serif;
   transition: border-color 0.3s ease;
 }
 

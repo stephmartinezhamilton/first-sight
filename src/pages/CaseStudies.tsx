@@ -112,7 +112,7 @@ const CaseStudies: React.FC = () => {
       <section className="contact-section">
         <div className="contact-container">
           <div className="section-header">
-            <h2 className="section-title">Let's Chat</h2>
+            <h2 className="section-title">Let's Connect</h2>
             <p className="section-subtitle">
               Open to conversations - from big ideas to casual thoughts.
             </p>
