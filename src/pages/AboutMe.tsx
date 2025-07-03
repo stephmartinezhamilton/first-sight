@@ -29,29 +29,7 @@ const AboutMe: React.FC = () => {
     }
   ];
 
-  const yaleHighlights = [
-    {
-      id: 1,
-      title: "Bachelor's Degree",
-      field: "Economics & Political Science",
-      period: "2016 - 2020",
-      description: "Graduated with honors, focusing on economic policy and international relations."
-    },
-    {
-      id: 2,
-      title: "Leadership Roles",
-      field: "Student Organizations",
-      period: "2017 - 2020",
-      description: "Led multiple student organizations, developing skills in team management and strategic planning."
-    },
-    {
-      id: 3,
-      title: "Research Experience",
-      field: "Policy Analysis",
-      period: "2018 - 2020",
-      description: "Conducted research on economic policy impacts, presenting findings to faculty and peers."
-    }
-  ];
+  
 
   const productInterests = [
     {
@@ -98,6 +76,9 @@ const AboutMe: React.FC = () => {
                 Born and raised in New York, I am an aspiring product manager with a background studying health, economics, and technology at Yale University. I am passionate about bridging the gap between technology, user behavior, and bussiness goals to create
                 thoughtful, impactful products. Outside of work, you'll see me taking yoga classes, exploring new coffee shops, or catching up on Morning Brew.
               </p>
+              <p className="hero-bio">
+                You can reach me at my <a href="https://linkedin.com/in/stephenmartinezhamilton" target="_blank" rel="noopener noreferrer">LinkedIn page</a>.
+              </p>
             </div>
           </div>
         </div>
@@ -124,47 +105,33 @@ const AboutMe: React.FC = () => {
       </section>
 
       {/* Yale Section */}
-      <section className="yale-section">
-        <div className="yale-container">
-          <div className="section-header">
-            <h2 className="section-title">Yale University</h2>
-            <p className="section-subtitle">
-              Where I developed my analytical foundation and leadership skills.
-            </p>
-          </div>
-          
-          <div className="yale-grid">
-            {yaleHighlights.map((highlight) => (
-              <div key={highlight.id} className="yale-card">
-                <div className="yale-card-header">
-                  <h3 className="yale-card-title">{highlight.title}</h3>
-                  <span className="yale-card-period">{highlight.period}</span>
-                </div>
-                <p className="yale-card-field">{highlight.field}</p>
-                <p className="yale-card-description">{highlight.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Yale section removed */}
 
       {/* Product Interests Section */}
       <section className="interests-section">
         <div className="interests-container">
           <div className="section-header">
-            <h2 className="section-title">What I'm Excited About</h2>
-            <p className="section-subtitle">
-              Areas of product management that drive my passion and curiosity.
-            </p>
+            <h2 className="section-title">In My Free Time</h2>
           </div>
           
           <div className="interests-grid">
-            {productInterests.map((interest) => (
-              <div key={interest.id} className="interest-card">
-                <h3 className="interest-title">{interest.title}</h3>
-                <p className="interest-description">{interest.description}</p>
+            <div className="free-time-rectangle" data-image="/image1.jpg">
+              <div className="rectangle-content">
               </div>
-            ))}
+              <div className="rectangle-image"></div>
+            </div>
+            
+            <div className="free-time-rectangle" data-image="/image2.jpg">
+              <div className="rectangle-content">
+              </div>
+              <div className="rectangle-image"></div>
+            </div>
+            
+            <div className="free-time-rectangle" data-image="/image3.jpg">
+              <div className="rectangle-content">
+              </div>
+              <div className="rectangle-image"></div>
+            </div>
           </div>
         </div>
       </section>

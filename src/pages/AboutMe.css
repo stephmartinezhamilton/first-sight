@@ -89,25 +89,6 @@
   word-break: break-word;
 }
 
-.hero-quick-facts {
-  display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
-  flex-wrap: wrap;
-}
-
-.fact {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--text-secondary);
-  font-size: 0.875rem;
-}
-
-.fact-icon {
-  font-size: 1.25rem;
-}
-
 /* Work Experience Section */
 .experience-section {
   padding: 4rem 0;
@@ -223,69 +204,6 @@
   letter-spacing: 0.05em;
 }
 
-/* Yale Section */
-.yale-section {
-  padding: 5rem 0;
-  background-color: var(--background);
-}
-
-.yale-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-.yale-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.yale-card {
-  background-color: var(--background);
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border-color);
-  transition: all 0.3s ease;
-}
-
-.yale-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-}
-
-.yale-card-header {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.yale-card-title {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  margin: 0;
-}
-
-.yale-card-period {
-  color: var(--text-secondary);
-  font-size: 0.875rem;
-}
-
-.yale-card-field {
-  color: var(--text-primary);
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-
-.yale-card-description {
-  color: var(--text-primary);
-  line-height: 1.6;
-}
-
 /* Product Interests Section */
 .interests-section {
   padding: 5rem 0;
@@ -300,47 +218,73 @@
 
 .interests-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 3rem;
 }
 
-.interest-card {
-  background-color: var(--background);
-  padding: 2rem;
-  border-radius: 1rem;
-  text-align: center;
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border-color);
+.free-time-rectangle {
+  position: relative;
+  height: 400px;
+  background: #4e7ede;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.interest-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
+.free-time-rectangle:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.interest-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
-  transition: transform 0.3s ease;
+.rectangle-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: opacity 0.3s ease;
 }
 
-.interest-card:hover .interest-icon {
-  transform: scale(1.1);
-}
-
-.interest-title {
-  font-size: 1.25rem;
+.rectangle-content h3 {
+  font-size: 1.5rem;
   font-weight: 600;
-  color: var(--text-primary);
   margin-bottom: 0.5rem;
+  color: white;
 }
 
-.interest-description {
-  color: var(--text-primary);
-  line-height: 1.6;
+.rectangle-content p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.rectangle-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.free-time-rectangle:hover .rectangle-image {
+  opacity: 1;
+}
+
+.free-time-rectangle:hover .rectangle-content {
+  opacity: 0.1;
 }
 
 /* Contact Section */
@@ -524,7 +468,6 @@
   }
 
   .experience-section,
-  .yale-section,
   .interests-section,
   .contact-section {
     padding: 3rem 0;
@@ -540,9 +483,13 @@
     height: 16px;
   }
 
-  .yale-grid,
   .interests-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .free-time-rectangle {
+    height: 180px;
   }
 
   .contact-content {
@@ -592,7 +539,6 @@
     align-items: flex-start;
   }
 
-  .yale-card,
   .interest-card {
     padding: 1.5rem;
   }
@@ -749,4 +695,12 @@
     min-width: 0;
     width: 100%;
   }
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-align: center;
 } 
