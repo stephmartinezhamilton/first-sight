@@ -227,7 +227,7 @@
   position: relative;
   height: 400px;
   background: #4e7ede;
-  border-radius: 0.5rem;
+  border-radius: 0;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -286,6 +286,8 @@
 .free-time-rectangle:hover .rectangle-content {
   opacity: 0.1;
 }
+
+
 
 /* Contact Section */
 .contact-section {
@@ -471,16 +473,6 @@
   .interests-section,
   .contact-section {
     padding: 3rem 0;
-  }
-
-  .timeline-item {
-    padding-left: 40px;
-  }
-
-  .timeline-marker {
-    left: 1px;
-    width: 16px;
-    height: 16px;
   }
 
   .interests-grid {

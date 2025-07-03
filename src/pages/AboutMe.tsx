@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './AboutMe.css';
 
 const AboutMe: React.FC = () => {
@@ -53,6 +53,18 @@ const AboutMe: React.FC = () => {
       description: "Exploring emerging technologies and methodologies to create innovative product solutions."
     }
   ];
+
+  useEffect(() => {
+    // Set background images for the rectangles
+    const rectangles = document.querySelectorAll('.free-time-rectangle');
+    rectangles.forEach((rectangle) => {
+      const imagePath = rectangle.getAttribute('data-image');
+      const imageDiv = rectangle.querySelector('.rectangle-image') as HTMLElement;
+      if (imagePath && imageDiv) {
+        imageDiv.style.backgroundImage = `url(${imagePath})`;
+      }
+    });
+  }, []);
 
   return (
     <div className="about-me-page">
@@ -115,19 +127,19 @@ const AboutMe: React.FC = () => {
           </div>
           
           <div className="interests-grid">
-            <div className="free-time-rectangle" data-image="/image1.jpg">
+            <div className="free-time-rectangle" data-image="/dance.png">
               <div className="rectangle-content">
               </div>
               <div className="rectangle-image"></div>
             </div>
             
-            <div className="free-time-rectangle" data-image="/image2.jpg">
+            <div className="free-time-rectangle" data-image="/beach.png">
               <div className="rectangle-content">
               </div>
               <div className="rectangle-image"></div>
             </div>
             
-            <div className="free-time-rectangle" data-image="/image3.jpg">
+            <div className="free-time-rectangle" data-image="/omakase.png">
               <div className="rectangle-content">
               </div>
               <div className="rectangle-image"></div>
